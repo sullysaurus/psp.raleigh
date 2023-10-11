@@ -1,0 +1,107 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+
+const seo = {
+	title: 'Popstar Productions | Photo Booth Rental in Raleigh, NC',
+	description: 'Photo booth rental in Raleigh',
+};
+---
+
+<AnnouncementBar text="How much does it cost to rent a photo booth in Raleigh, NC?" href="/blog/posts/rent-a-photo-booth-raleigh/" slot="announcement-bar"/>
+<Layout seo={seo} >
+	<HomeHeroSection />
+	<CustomerQuoteSection
+		quoteText="So much fun to have this easy to use photo booth at our family reunion! We have tons of memories to share with these photos!"
+		customerName="Laura Hendrix McKillop"
+	/>
+
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>Why?</h2>
+			<p>
+				We prioritize simplicity and transparency, ensuring every customer enjoys a seamless, stress-free experience. Our photobooth services are straightforward and honest, designed with you in mind. Choose us for genuine, uncomplicated fun.
+			</p>
+		</div>
+		<Button href="/quote" slot="column-1-cta">Yes Please</Button>
+		<div slot="column-2-body">
+			<h2>How?</h2>
+			<p>
+				In a sea of options, our unmatched customer service stands out. Prioritizing clear communication, we ensure one less stress point for you. Because peace of mind in business interactions is truly priceless.
+			</p>
+		</div>
+		<Button href="/quote" slot="column-2-cta">Now We're Talking</Button>
+		<div slot="column-3-body">
+			<h2>What?</h2>
+			<p>
+				What do you get with Popstar Productions? Dive into our range of features, packages, and tailored options designed to fit every event's unique needs.
+			</p>
+		</div>
+		<Button href="/quote" slot="column-3-cta">Get Started</Button>
+	</ThreeColumnTextSection>
+
+  <div class="hero-section__image">
+    <picture>
+      <img
+        src="/assets/images/home/dark-hero.jpg"
+        alt="Astro Odyssey"
+        id="home-hero-image"
+      />
+    </picture> 
+ </div>
+
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>The Popstar Booth - $150/hour</h2>
+      <h3>Included</h3>
+      <p>
+        <ul>
+          <li>Customizable tap to start screen</li>
+          <li>Photos, videos, gifs, boomerangs</li>
+          <li>Live gallery of all your photos</li>
+          <li>Instagram style filters</li>
+          <li>Snapchat style masks</li>
+          <li>Choice of photo template</li>
+          <li>Text, email, air drop and QR code sharing</li>
+          <li>Real time live gallery of all your event photos</li>
+      </ul>
+      </p>
+      <h3>Add Ons</h3>
+      <p>
+        <ul>
+          <li>Premium Backdrops $100+</li>
+          <li>Custom Props $50+</li>
+          <li>Custom photo templates $50+</li>
+          <li>Custom text and email branding $200+</li>
+      </ul>
+      </p>
+      
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/landing-1/landing-sticky.jpg"
+        alt="Astro Odyssey"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+
+  <CtaCardSection background="var(--theme-surface-1)" color="var(--theme-on-surface-2)">
+    <h2>So Now What?</h2>
+    <p>Check Your Date. Get a Quote. Rock Out.</p>
+    <Button href="/quote" customIcon>Quick Quote<Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment></Button>
+  </CtaCardSection>
+
+</Layout>

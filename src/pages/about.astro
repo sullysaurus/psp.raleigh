@@ -1,0 +1,42 @@
+---
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import HeroSection from '../components/sections/heros/HeroSection.astro';
+import {Icon} from 'astro-icon'
+import {
+  Button,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+const seo = {
+	title: 'About | Popstar Productions',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>About Popstar Productions</h1>
+			<p>
+				Popstar Productions was founded by husband and wife duo, Danny and Danea Sullivan. With Danny's experience as a professional baseball player and Danea's history as a Disney World dancer, they both understand the intricate details and dedication necessary for success. Their diverse experiences are the backbone of their commitment to taking your event to a higher level. Trust them to bring a unique touch to your occasion with their balanced blend of passion and professionalism. For an event that truly stands out, contact Popstar Productions today!
+			</p>
+		</div>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/home/about.jpg"
+        alt="Astro Odyssee"
+        id="home-hero-image"
+      />
+    </picture>
+	</HeroSection>
+  <CtaCardSection background="var(--theme-surface-1)" color="var(--theme-on-surface-2)">
+    <h2>So Now What?</h2>
+    <p>Check Your Date. Get a Quote. Rock Out.</p>
+    <Button href="/quote" customIcon>
+    Quick Quote
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment>
+    </Button>
+</CtaCardSection>
+</Layout>

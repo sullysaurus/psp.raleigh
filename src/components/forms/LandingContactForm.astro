@@ -1,0 +1,37 @@
+---
+import {Icon} from 'astro-icon'
+import { Button, FormInput, FormSelect, FormTextarea } from '@littlesticks/odyssey-theme-components';
+
+
+const hoursOptions = ['2 hours', '3 hours', '4 hours', '5 hours', '6 hours', '7 hours', '8 hours', 'all the hours'];
+
+---
+
+<form name="Contact Form" method="POST" action="/thank-you" >
+  <FormInput type="text" label="First Name" name="First Name" placeholder="John" />
+  <FormInput type="text" label="Last Name" name="Last Name" placeholder="Doe" />
+  <FormInput type="email" label="Email" name="Email" placeholder="hello@example.com" />
+
+  <!-- Added Inputs Below -->
+  <FormSelect type="dropdown" label="Hours Needed" name="Hours Needed" options={hoursOptions} />
+  <FormInput type="checkbox" label="Custom Backdrop" name="Custom Backdrop" value="200" />
+  <FormInput type="checkbox" label="Custom Props" name="Custom Props" value="100" />
+  <FormInput type="checkbox" label="Custom Photo Template" name="Custom Photo Template" value="100" />
+  <FormInput type="checkbox" label="Custom Branding" name="Custom Branding" value="200" />
+  <!-- End of Added Inputs -->
+
+  <Button customIcon>Submit
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right" />
+    </Fragment>
+  </Button>
+</form>
+
+
+<style>
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+</style>
