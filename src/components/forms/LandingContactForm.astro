@@ -8,16 +8,15 @@ const hoursOptions = ['2 hours', '3 hours', '4 hours', '5 hours', '6 hours', '7 
 ---
 
 <form name="Contact Form" method="POST" action="/thank-you" data-netlify="true">
-  <FormInput type="text" label="First Name" name="First Name" placeholder="John" required/>
-  <FormInput type="text" label="Last Name" name="Last Name" placeholder="Doe" required/>
+  <FormInput type="text" label="Name" name="Name" placeholder="Dua Lipa" required/>
   <FormInput type="email" label="Email" name="Email" placeholder="hello@example.com" required/>
 
   <!-- Added Inputs Below -->
-  <FormSelect type="dropdown" label="Hours Needed" name="Hours Needed" options={hoursOptions} required/>
-  <FormInput type="checkbox" label="Custom Backdrop" name="Custom Backdrop" value="200" required/>
-  <FormInput type="checkbox" label="Custom Props" name="Custom Props" value="100" required/>
-  <FormInput type="checkbox" label="Custom Photo Template" name="Custom Photo Template" value="100" required/>
-  <FormInput type="checkbox" label="Custom Branding" name="Custom Branding" value="200" required/>
+  <FormSelect type="dropdown" label="Hours Needed" name="Hours Needed" options={hoursOptions} />
+  <FormInput type="checkbox" label="Custom Backdrop" name="Custom Backdrop" value="200"/>
+  <FormInput type="checkbox" label="Custom Props" name="Custom Props" value="100"/>
+  <FormInput type="checkbox" label="Custom Photo Template" name="Custom Photo Template" value="100"/>
+  <FormInput type="checkbox" label="Custom Branding" name="Custom Branding" value="200"/>
   <!-- End of Added Inputs -->
 
   <Button customIcon>Submit
