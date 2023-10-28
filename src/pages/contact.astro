@@ -9,13 +9,14 @@ const seo = {
 };
 ---
 
-<Layout seo={seo}>
+<Layout {seo}>
 	<Container>
 		<section class="contact-hero__section">
 			<div class="contact-hero__text-section">
 				<h1>Contact Us</h1>
 				<p>
-					What's on your mind? We can answer any questions and customize packages, just let us know what you need!
+					What's on your mind? We can answer any questions and customize
+					packages, just let us know what you need!
 				</p>
 				<div>
 					<p>
@@ -25,7 +26,14 @@ const seo = {
 						>
 					</p>
 					<div class="map-container">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103400.18023234313!2d-78.80838520653657!3d35.91624241039797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf922ffd03a05%3A0x881c1fdcc034d8cc!2sPopstar%20Photo%20Booths!5e0!3m2!1sen!2sus!4v1698258073065!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103400.18023234313!2d-78.80838520653657!3d35.91624241039797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acf922ffd03a05%3A0x881c1fdcc034d8cc!2sPopstar%20Photo%20Booths!5e0!3m2!1sen!2sus!4v1698258073065!5m2!1sen!2sus"
+							width="600"
+							height="450"
+							style="border:0;"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 			</div>
@@ -64,7 +72,7 @@ const seo = {
 		height: 0;
 		overflow: hidden;
 	}
-	
+
 	.map-container iframe {
 		position: absolute;
 		top: 0;
