@@ -1,23 +1,24 @@
 ---
-import {Icon} from 'astro-icon'
+
+import { Icon } from 'astro-icon';
 import { Button, FormInput, FormSelect, FormTextarea } from '@littlesticks/odyssey-theme-components';
 
-
 const hoursOptions = ['2 hours', '3 hours', '4 hours', '5 hours', '6 hours', '7 hours', '8 hours', 'all the hours'];
+const yesNoOptions = ['Yes', 'No'];
 
 ---
 
 <form name="Contact Form" method="POST" action="/thank-you" data-netlify="true">
   <FormInput type="text" label="Name" name="Name" placeholder="Dua Lipa" required/>
-  <FormInput type="email" label="Email" name="Email" placeholder="hello@example.com" required/>
-
-  <!-- Added Inputs Below -->
-  <FormSelect type="dropdown" label="Hours Needed" name="Hours Needed" options={hoursOptions} />
-  <FormInput type="checkbox" label="Custom Backdrop" name="Custom Backdrop" value="200"/>
-  <FormInput type="checkbox" label="Custom Props" name="Custom Props" value="100"/>
-  <FormInput type="checkbox" label="Custom Photo Template" name="Custom Photo Template" value="100"/>
-  <FormInput type="checkbox" label="Custom Branding" name="Custom Branding" value="200"/>
-  <!-- End of Added Inputs -->
+  <FormInput type="email" label="Email" name="Email" placeholder="dua@letsrock.com" required/>
+  <FormInput type="tel" label="Phone Number" name="Phone Number" placeholder="Enter phone number" required/>
+  <FormInput type="date" label="Event Date" name="Event Date" required/>
+  <FormInput type="text" label="Event Venue" name="Event Venue" placeholder="Enter venue" required/>
+  <FormSelect label="Hours Needed" name="Hours Needed" options={hoursOptions} required/>
+  <FormSelect label="Custom Backdrop" name="Custom Backdrop" options={yesNoOptions} required/>
+  <FormSelect label="Custom Props" name="Custom Props" options={yesNoOptions} required/>
+  <FormSelect label="Custom Photo Template" name="Custom Photo Template" options={yesNoOptions} required/>
+  <FormSelect label="Custom Branding" name="Custom Branding" options={yesNoOptions} required/>
 
   <Button customIcon>Submit
     <Fragment slot="icon">
@@ -25,7 +26,6 @@ const hoursOptions = ['2 hours', '3 hours', '4 hours', '5 hours', '6 hours', '7 
     </Fragment>
   </Button>
 </form>
-
 
 <style>
   form {
