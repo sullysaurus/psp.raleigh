@@ -27,6 +27,8 @@
 
 	/* Theme Layout */
 	--section-margin: 3rem;
+	--photo-grid-margin: 0rem;
+	--gallery-margin: 0rem;
 	--theme-grid-gap: 1rem;
 	--container-max-width: 1440px;
 	--container-max-width-narrow: 960px;

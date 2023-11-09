@@ -4,10 +4,10 @@ import {
   AnnouncementBar,
 	Button,
 	CustomerQuoteSection,
-	ThreeColumnTextSection,
   StickyTextImageSection,
   CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
+import PhotoGridSection from '../../../components/sections/PhotoGridSection.astro'
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 
@@ -60,7 +60,7 @@ const seo = {
     </picture>
   </StickyTextImageSection>
 
-  <ThreeColumnTextSection>
+  <PhotoGridSection>
 		<div slot="column-1-body">
 		  <img src="/assets/images/home/image1.jpg" alt="Home Image 1" />
 		</div>
@@ -70,8 +70,8 @@ const seo = {
 		<div slot="column-3-body">
 		  <img src="/assets/images/home/image3.jpg" alt="Home Image 3" />
 		</div>
-	</ThreeColumnTextSection>
-  <ThreeColumnTextSection>
+	</PhotoGridSection>
+  <PhotoGridSection>
 		<div slot="column-1-body">
 		  <img src="/assets/images/home/image4.jpg" alt="Home Image 4" />
 		</div>
@@ -81,8 +81,8 @@ const seo = {
 		<div slot="column-3-body">
 		  <img src="/assets/images/home/image6.jpg" alt="Home Image 6" />
 		</div>
-	</ThreeColumnTextSection>
-  <ThreeColumnTextSection>
+	</PhotoGridSection>
+  <PhotoGridSection>
 		<div slot="column-1-body">
 		  <img src="/assets/images/home/image7.jpg" alt="Home Image 7" />
 		</div>
@@ -92,8 +92,8 @@ const seo = {
 		<div slot="column-3-body">
 		  <img src="/assets/images/home/image9.jpg" alt="Home Image 9" />
 		</div>
-	</ThreeColumnTextSection>
-  <ThreeColumnTextSection>
+	</PhotoGridSection>
+  <PhotoGridSection>
 		<div slot="column-1-body">
 		  <img src="/assets/images/home/image10.jpg" alt="Home Image 7" />
 		</div>
@@ -103,8 +103,8 @@ const seo = {
 		<div slot="column-3-body">
 		  <img src="/assets/images/home/image12.jpg" alt="Home Image 9" />
 		</div>
-	</ThreeColumnTextSection>
-  <ThreeColumnTextSection>
+	</PhotoGridSection>
+  <PhotoGridSection>
 		<div slot="column-1-body">
 			<h2>Why?</h2>
 			<p>
@@ -126,7 +126,7 @@ const seo = {
 			</p>
 		</div>
 		<Button href="/quote" slot="column-3-cta">Get Started</Button>
-	</ThreeColumnTextSection>
+	</PhotoGridSection>
 
   <CtaCardSection background="var(--theme-surface-1)" color="var(--theme-on-surface-2)">
     <h2>Ready to get started?</h2>
@@ -137,4 +137,3 @@ const seo = {
   </CtaCardSection>
 
 </Layout>
-
