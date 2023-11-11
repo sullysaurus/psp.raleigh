@@ -3,18 +3,16 @@
 import { Icon } from 'astro-icon';
 import { Button, FormInput, FormSelect, FormTextarea } from '@littlesticks/odyssey-theme-components';
 
-const hoursOptions = ['2 hours', '3 hours', '4 hours', '5 hours', '6 hours', '7 hours', '8 hours', 'all the hours'];
 const yesNoOptions = ['Yes', 'No'];
 
 ---
 
-<form name="Contact Form" method="POST" action="/thank-you" data-netlify="true">
+<form name="Lead Form" method="POST" action="/thank-you" data-netlify="true">
   <FormInput type="text" label="Name" name="Name" placeholder="Dua Lipa" required/>
   <FormInput type="email" label="Email" name="Email" placeholder="dua@letsrock.com" required/>
   <FormInput type="tel" label="Phone Number" name="Phone Number" placeholder="Enter phone number" required/>
   <FormInput type="date" label="Event Date" name="Event Date" required/>
   <FormInput type="text" label="Event Venue" name="Event Venue" placeholder="Enter venue" required/>
-
   <FormSelect label="$25 Text, Bluetooth, QR Photo Delivery" name="Text, Bluetooth, QR Photo Delivery" options={yesNoOptions} required/>
   <FormSelect label="$50 Gifs, Boomerangs and Videos" name="Gifs, Boomerangs, Videos" options={yesNoOptions} required/>
   <FormSelect label="$100 Custom Tap to Start Screen" name="Custom Tap to Start Screen" options={yesNoOptions} required/>
