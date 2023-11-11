@@ -20,9 +20,6 @@ const yesNoOptions = ['Yes', 'No'];
   <FormSelect label="$100 Custom Photo Template" name="$100 Custom Photo Template" options={yesNoOptions} required/>
   <FormSelect label="$200 Custom Branding" name="$200 Custom Branding" options={yesNoOptions} required/>
   <FormSelect label="$200 Premium Backdrop" name="$200 Premium Backdrop" options={yesNoOptions} required/>
-  <FormInput type="hidden" name="Total Price" id="totalPriceInput" value="300"/>
-  
-  <div id="totalPrice">Total Price: $300</div>
 
   <Button customIcon>Submit
     <Fragment slot="icon">
@@ -38,23 +35,3 @@ const yesNoOptions = ['Yes', 'No'];
     gap: 1rem;
   }
 </style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('[name="Lead Form"]');
-    let totalPrice = 300;
-
-    form.addEventListener("change", function() {
-      totalPrice = 300; // Reset to default price
-      if (form["$25 Text, Bluetooth, QR Photo Delivery"].value === "Yes") totalPrice += 25;
-      if (form["$50 Gifs, Boomerangs, Videos"].value === "Yes") totalPrice += 50;
-      if (form["$100 Custom Tap to Start Screen"].value === "Yes") totalPrice += 100;
-      if (form["$100 Custom Props"].value === "Yes") totalPrice += 100;
-      if (form["$100 Custom Photo Template"].value === "Yes") totalPrice += 100;
-      if (form["$200 Custom Branding"].value === "Yes") totalPrice += 200;
-      if (form["$200 Premium Backdrop"].value === "Yes") totalPrice += 200;
-
-      document.getElementById("totalPrice").textContent = "Total Price: $" + totalPrice;
-    });
-  });
-</script>
