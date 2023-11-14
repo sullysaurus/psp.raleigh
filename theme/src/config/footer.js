@@ -44,7 +44,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Quote',
-				slug: '/quote',
+				slug: '/date',
 			},
 		],
 	}
