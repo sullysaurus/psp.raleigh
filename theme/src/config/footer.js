@@ -43,7 +43,7 @@ export const footerLists = [
 				slug: '/contact',
 			},
 			{
-				title: 'Quote',
+				title: 'Check Date',
 				slug: '/date',
 			},
 		],
