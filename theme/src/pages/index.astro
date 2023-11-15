@@ -61,9 +61,10 @@ const seo = {
     </picture>
   </StickyTextImageSection>
 
-  <CtaCardSection>
-    <h2>Perfect For All Ocassions</h2>
-  </CtaCardSection>
+ 
+  <div class="centered">
+    <h2>Perfect For All Occasions</h2>
+  </div>
 
   <PhotoGridSection>
 		<div slot="column-1-body">
@@ -80,37 +81,48 @@ const seo = {
 		</div>
 	</PhotoGridSection>
 
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>How to Book</h2>
+      <h3>1. Check Your Event Date</h3>
+			<p>Submit a short form check if your date is available. <br>These booths go quickly! So do this first.</p>
+      <Button href="/date" slot="column-1-cta">Check Your Date</Button><br>
+      <h3>2. Pay the $99 Deposit</h3>
+			<p>
+				If your date is available, hooray! Now it's time to secure it with a $99 deposit. <br>This is the only way we guarantee service.
+			</p>
+      <Button slot="action-item" href="https://book.stripe.com/28o9BK9ybbWy7K06oo">Pay Deposit</Button><br>
+      <h3>3. Finalize the Details</h3>
+      <p>We'll reach out same day to finalize any upgrades and all event details. <br>We'll then send a final invoice that is due one week before your event.</p>
+      <Button href="/contact" slot="column-1-cta">Contact Us</Button><br>
+      
+		</div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/home/book.jpg"
+        alt="Popstar Photo Booths"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
   <CtaCardSection background="var(--theme-surface-1)" color="var(--theme-on-surface-2)">
-    <h2>How to Book</h2>
-  </CtaCardSection>
-  <PhotoGridSection>
-		<div slot="column-1-body">
-			<h2>1. Check Date</h2>
-			<p>
-				Submit this short form or message us to check if your date is available. These booths go quickly! So do this first.
-			</p>
-		</div>
-		<Button href="/date" slot="column-1-cta">Check Date</Button>
-		<div slot="column-2-body">
-			<h2>2. Pay Deposit</h2>
-			<p>
-				If your date is available, hooray! Now it's time to secure it with a $99 deposit. This is the only way we guarantee service.
-			</p>
-		</div>
-		<Button href="https://book.stripe.com/28o9BK9ybbWy7K06oo" slot="column-2-cta">Pay Deposit</Button>
-		<div slot="column-3-body">
-			<h2>3. Finalize</h2>
-			<p>
-				We'll reach out same day to finalize any upgrades and all event details. We'll then send a final invoice that is due one week before your event.
-			</p>
-		</div>
-		<Button href="/date" slot="column-3-cta">Let's Go!</Button>
-	</PhotoGridSection>
+    <h2>Ready to get started?</h2>
+    <p>Check Your Date. Pay Deposit. Rock Out.</p>
+    <Button href="/date" customIcon>
+    Check Date
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment>
+    </Button>
+</CtaCardSection>
 
 </Layout>
 
 <style>
-  img{
-    border-radius: var(--theme-shape-radius);
-  }
+.centered {
+  text-align: center;
+}
+img {
+  border-radius: var(--theme-shape-radius);
+}
 </style>
