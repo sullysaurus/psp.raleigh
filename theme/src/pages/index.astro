@@ -5,11 +5,12 @@ import {
   Button,
   CustomerQuoteSection,
   StickyTextImageSection,
-  CtaCardSection
+  CtaCardSection,
 } from '@littlesticks/odyssey-theme-components';
 import PhotoGridSection from '../../../components/sections/PhotoGridSection.astro'
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import HowToBook from '../../../components/sections/HowToBook.astro';
 
 const seo = {
 	title: 'Popstar Photo Booths | Photo Booth Rental in Raleigh, NC',
@@ -81,7 +82,7 @@ const seo = {
 		</div>
 	</PhotoGridSection>
 
-  <StickyTextImageSection>
+  <HowToBook>
     <div slot="text-container">
       <h2>How to Book</h2>
       <h3>1. Check Your Event Date</h3>
@@ -104,7 +105,7 @@ const seo = {
         loading="lazy"
       />
     </picture>
-  </StickyTextImageSection>
+  </HowToBook>
   <CtaCardSection background="var(--theme-surface-1)" color="var(--theme-on-surface-2)">
     <h2>Ready to get started?</h2>
     <p>Check Your Date. Pay Deposit. Rock Out.</p>
