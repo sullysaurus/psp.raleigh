@@ -1,7 +1,7 @@
 export const footerSocials = [
   {
     name: 'Instagram',
-    url: 'https://instagram.com/psp.raleigh',
+    url: 'https://instagram.com/popstarphotobooths',
     icon: "mdi:instagram",
   },
   {
