@@ -6,6 +6,7 @@ import {
   CustomerQuoteSection,
   StickyTextImageSection,
   CtaCardSection,
+  ThreeColumnTextSection
 } from '@littlesticks/odyssey-theme-components';
 import PhotoGridSection from '../../components/sections/PhotoGridSection.astro'
 import Layout from '../layouts/Page.astro';
@@ -27,39 +28,40 @@ const seo = {
 	/>
   <StickyTextImageSection>
     <div slot="text-container">
-      <h2>How Does It Work?</h2>
+      <h2>The Popstar Booth</h2>
       <h3>Included</h3>
       <p>
         <ul>
-		      <li>We drop off and pick up the booth anytime between 11am to 11pm</li>
-          <li>Unlimited digital photos</li>
+          <li>Unlimited photos, gifs, boomerangs and videos</li>
           <li>Instagram style filters</li>
-          <li>Instant email photo delivery</li>
+          <li>Instant email, text, QR code and bluetooth photo delivery</li>
           <li>Real time live gallery of all your event photos</li>
       </ul>
       </p>
       <h3>Add Ons</h3>
       <p>
         <ul>
-          <li>Text, bluetooth and QR code photo delivery $25</li>
-          <li>Gifs, boomerangs and videos $50</li>
-          <li>Customizable tap to start screen $100</li>
-          <li>Custom props $100</li>
-          <li>Custom photo template $100</li>
-		  <li>Premium backdrop $200</li>
-          <li>Custom text and email branding $200</li>
-      </ul>
+          <li>Gifs, boomerangs and videos</li>
+          <li>Customizable tap to start screen</li>
+          <li>Custom props</li>
+          <li>Custom photo template</li>
+          <li>Premium backdrops</li>
+          <li>Custom text and email branding</li>
+          <li>Customer analytics</li>
+        </ul>
       </p>
-      <Button href="/date" slot="column-1-cta">Check Your Date</Button>
+      <Button href="https://popstar-photo-booths.checkcherry.com/reservation/user_info" slot="column-1-cta">Get Quote</Button>
       
     </div>
      <picture slot="image-container">
-		<h3>Premium Backdrops</h3>
-		<iframe src="https://widget.pbbackdrops.com/embed/v1/9848ed0b-7507-4ac9-85b9-549afd32196c" style="width:100%;height:900px;border:none;"></iframe>
+      <img
+        src="/assets/images/landing-1/landing-sticky.jpg"
+        alt="Popstar Photo Booths"
+        loading="lazy"
+      />
     </picture>
   </StickyTextImageSection>
 
- 
   <div class="centered">
     <h2>Perfect For All Occasions</h2>
   </div>
@@ -84,15 +86,15 @@ const seo = {
       <h2>How to Book</h2>
       <h3>1. Check Your Event Date</h3>
 			<p>Submit a short form check if your date is available. <br>These booths go quickly! So do this first.</p>
-      <Button href="/date" slot="column-1-cta">Check Your Date</Button><br>
-      <h3>2. Pay the $99 Deposit</h3>
+      <Button href="https://popstar-photo-booths.checkcherry.com/availability_calendar?props=%7B%22showBookNowButton%22%3Atrue%2C%22bookNowButtonText%22%3A%22Book%20Now%22%2C%22showCustomBookingUrl%22%3Afalse%2C%22customBookingUrl%22%3A%22%22%2C%22availableMessage%22%3A%22Congratulations%2C%20we%20are%20currently%20available%20for%20this%20day%20and%20package.%20%20Just%20click%20%26%2339%3BBook%20Now%26%2339%3B%20to%20reserve%20your%20date%20now.%22%2C%22unavailableMessage%22%3A%22Sorry%2C%20but%20we%20are%20not%20able%20to%20take%20automated%20bookings%20for%20this%20date%20or%20package.%20%20Please%20contact%20us%20directly%20to%20check%20for%20available%20options.%22%2C%22theme%22%3A%22normal%22%7D" slot="column-1-cta">Check Your Date</Button><br>
+      <h3>2. Build Your Package</h3>
 			<p>
-				If your date is available, hooray! Now it's time to secure it with a $99 deposit. <br>This is the only way we guarantee service.
+				If your date is available, hooray! Now it's time to build your package.
 			</p>
-      <Button slot="action-item" href="https://book.stripe.com/28o9BK9ybbWy7K06oo">Pay Deposit</Button><br>
-      <h3>3. Finalize the Details</h3>
-      <p>We'll reach out same day to finalize any upgrades and all event details. <br>We'll then send a final invoice that is due one week before your event.</p>
-      <Button href="/contact" slot="column-1-cta">Contact Us</Button><br>
+      <Button slot="action-item" href="https://popstar-photo-booths.checkcherry.com/reservation/user_info">See Packages</Button><br>
+      <h3>3. Pay $99 Deposit</h3>
+      <p>Reserve your date with a deposit.</p>
+      <Button href="https://popstar-photo-booths.checkcherry.com/reservation/user_info" slot="column-1-cta">Let's Go</Button><br>
       
 		</div>
      <picture slot="image-container">
@@ -105,8 +107,8 @@ const seo = {
   </HowToBook>
   <CtaCardSection background="var(--theme-surface-1)" color="var(--theme-on-surface-2)">
     <h2>Ready to get started?</h2>
-    <p>Check Your Date. Pay Deposit. Rock Out.</p>
-    <Button href="/date" customIcon>
+    <p>Check Your Date!</p>
+    <Button href="https://popstar-photo-booths.checkcherry.com/availability_calendar?props=%7B%22showBookNowButton%22%3Atrue%2C%22bookNowButtonText%22%3A%22Book%20Now%22%2C%22showCustomBookingUrl%22%3Afalse%2C%22customBookingUrl%22%3A%22%22%2C%22availableMessage%22%3A%22Congratulations%2C%20we%20are%20currently%20available%20for%20this%20day%20and%20package.%20%20Just%20click%20%26%2339%3BBook%20Now%26%2339%3B%20to%20reserve%20your%20date%20now.%22%2C%22unavailableMessage%22%3A%22Sorry%2C%20but%20we%20are%20not%20able%20to%20take%20automated%20bookings%20for%20this%20date%20or%20package.%20%20Please%20contact%20us%20directly%20to%20check%20for%20available%20options.%22%2C%22theme%22%3A%22normal%22%7D" customIcon>
     Check Date
     <Fragment slot="icon">
       <Icon name="ic:baseline-chevron-right"/>
