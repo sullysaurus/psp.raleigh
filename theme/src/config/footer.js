@@ -26,6 +26,10 @@ export const footerLists = [
 				slug: '/',
 			},
 			{
+				title: 'Upgrades',
+				slug: '/upgrades',
+			},
+			{
 				title: 'Blog',
 				slug: '/blog',
 			},
