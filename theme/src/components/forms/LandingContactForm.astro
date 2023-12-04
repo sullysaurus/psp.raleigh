@@ -1,28 +1,6 @@
 ---
 
-import { Icon } from 'astro-icon';
-import { Button, FormInput} from '@littlesticks/odyssey-theme-components';
-
-const yesNoOptions = ['Yes', 'No'];
-
 ---
 
-<form name="Lead Form" method="POST" action="/thank-you" data-netlify="true">
-  <FormInput type="text" label="Name" name="Name" placeholder="Dua Lipa" required/>
-  <FormInput type="email" label="Email" name="Email" placeholder="dua@letsrock.com" required/>
-  <FormInput type="tel" label="Phone Number" name="Phone Number" placeholder="Enter phone number" required/>
-  <FormInput type="text" label="Message" name="Message" required/>
-  <Button customIcon>Submit
-    <Fragment slot="icon">
-      <Icon name="ic:baseline-chevron-right" />
-    </Fragment>
-  </Button>
-</form>
+<script src="https://popstar-photo-booths.checkcherry.com/api/checkcherry_widgets" type="text/javascript" charset="utf-8"></script><div class="checkcherry__widget__contact-form" data-props='{"apiKey":"TCN-R4JQ-W4A","contactFormId":10776,"iframe":false,"host":"https://popstar-photo-booths.checkcherry.com"}'></div>
 
-<style>
-  form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-</style>
