@@ -1,11 +1,15 @@
 ---
 import {Icon} from 'astro-icon'
 import {
-  AnnouncementBar
+  AnnouncementBar,
+  Button,
+  CustomerQuoteSection,
+  StickyTextImageSection,
+  CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
+import PhotoGridSection from '../../components/sections/PhotoGridSection.astro'
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
-
 
 const seo = {
 	title: 'Popstar Photo Booths | Photo Booth Rental in Raleigh, NC',
@@ -13,7 +17,94 @@ const seo = {
 };
 ---
 
-<AnnouncementBar text="Leave a Google review!" href="https://g.page/r/CczYNMDcHxyIEBM/review" slot="announcement-bar"/>
+<AnnouncementBar text="Did you love working with us? Leave a Google review and support a small business!" href="https://g.page/r/CczYNMDcHxyIEBM/review" slot="announcement-bar"/>
 <Layout seo={seo} >
 	<HomeHeroSection />
+	<CustomerQuoteSection
+		quoteText="So much fun to have this easy to use photo booth at our family reunion! We have tons of memories to share with these photos!"
+		customerName="Laura Hendrix McKillop"
+	/>
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>The Popstar Booth</h2>
+      <h3>$150 per hour</h3>
+      <p>
+        <ul>
+          <li>Photos, videos, gifs, boomerangs</li>
+          <li>Instagram style filters</li>
+          <li>Text, email, air drop and QR code sharing</li>
+          <li>Real time live gallery of all your event photos</li>
+          <li>Choice of in stock backdrop</li>
+      </ul>
+      </p>
+      <h3>Upgrades</h3>
+      <p>
+        <ul>
+          <li>Premium Backdrops $200+</li>
+          <li>Custom Props $100+</li>
+          <li>Custom photo templates $100+</li>
+          <li>Custom text and email branding $200+</li>
+      </ul>
+      </p>
+      <Button href="https://popstar-photo-booths.checkcherry.com/reservation" slot="column-1-cta">Get Price</Button>
+      
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/home/popstar-booth.jpg"
+        alt="Popstar Photo Booths"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+  <CustomerQuoteSection
+  quoteText="Dan and his team are amazing at ensuring your guests have fun creating memories with his various photobooths! You will not be disappointed!"
+  customerName="Micah Brown - Amore Planning Co."
+/>
+  <h3 class="centered">How to Book</h3>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+      <h4>Step 1: Your Info</h4>
+		  <img src="/assets/images/home/form.png" alt="Form" />
+		</div>
+		<div slot="column-2-body">
+      <h4>Step 2: Check Your Date</h4>
+		  <img src="/assets/images/home/select-date.png" alt="Select Date" />
+    </div>
+		<div slot="column-3-body">
+      <h4>Step 3: Select Add Ons</h4>
+		  <img src="/assets/images/home/addons.png" alt="Add Ons" />
+		</div>
+	</PhotoGridSection>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+      <h4>Step 4: Select Backdrop</h4>
+		  <img src="/assets/images/home/backdrop.png" alt="Back Drops" />
+		</div>
+		<div slot="column-2-body">
+      <h4>Step 5: Venue Info</h4>
+		  <img src="/assets/images/home/venue.png" alt="Venue" />
+    </div>
+		<div slot="column-3-body">
+      <h4>Step 6: Review</h4>
+		  <img src="/assets/images/home/review.png" alt="Review" />
+		</div>
+	</PhotoGridSection>
+  <CtaCardSection>
+  <h2>Ready to get started?</h2>
+  <p>Build A Package!</p>
+  <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" customIcon>
+    Let's Go
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right" />
+    </Fragment>
+  </Button>
+</CtaCardSection>
+
 </Layout>
+
+<style>
+  .centered {
+    text-align: center;
+  }
+</style>
