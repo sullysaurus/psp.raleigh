@@ -91,6 +91,28 @@ const seo = {
 		  <img src="/assets/images/home/review.png" alt="Review" />
 		</div>
 	</PhotoGridSection>
+  <CustomerQuoteSection
+  quoteText="Great quality pictures to capture amazing memories! 5 stars for sure!!"
+  customerName="Danielle Vitti"
+/>
+<div class="centered">
+  <h3>Perfect For All Occasions</h3>
+</div>
+
+<PhotoGridSection>
+  <div slot="column-1-body">
+    <img src="/assets/images/home/sofar.jpg" alt="Events" loading="lazy" />
+    <h4>Events</h4>
+  </div>
+  <div slot="column-2-body">
+    <img src="/assets/images/home/tap-to-start.jpg" alt="Weddings" loading="lazy" />
+    <h4>Weddings</h4>
+  </div>
+  <div slot="column-3-body">
+    <img src="/assets/images/home/birthday.jpg" alt="Birthdays" loading="lazy" />
+    <h4>Birthdays</h4>
+  </div>
+</PhotoGridSection>
   <CtaCardSection>
   <h2>Ready to get started?</h2>
   <p>Let's do it!</p>
@@ -105,7 +127,11 @@ const seo = {
 </Layout>
 
 <style>
-  .centered {
-    text-align: center;
-  }
+.centered {
+  text-align: center;
+}
+img {
+  border-radius: var(--theme-shape-radius);
+}
+
 </style>
