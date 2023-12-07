@@ -1,8 +1,7 @@
 ---
 import { Icon } from 'astro-icon';
-import { Container, Button } from '@littlesticks/odyssey-theme-components';
-import settings from '../../../config/settings.js';
-import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
+import { Container, Button, YouTubeEmbedSection } from '@littlesticks/odyssey-theme-components';
+
 ---
 
 <Container>
@@ -10,25 +9,19 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		<div class="hero-section__text">
 				<h1>Popstar Photo Booths</h1>
 				<p>
-					Bringing people together one photo at a time.
+				  Bringing people together one photo at a time.
 				</p>
 				<div class="hero-btns__container">
-					<Button href="https://popstar-photo-booths.checkcherry.com/reservation/user_info" customIcon
-						>Book Now
+					<Button href="/date" customIcon
+						>Book a Booth
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
             </Button>
 				</div>
 		</div>
-		<div class="hero-section__image">
-				<picture>
-					<img
-						src="/assets/images/home/kiss.jpg"
-						alt="Astro Odyssey"
-						id="home-hero-image"
-					/>
-				</picture>
+		<div class="hero-section__video">
+			<YouTubeEmbedSection url="https://youtu.be/BUV3W2n-S1Q?si=ocOnjnPLZNTAADKh" rounded />
 		</div>
 	</section>
 </Container>
