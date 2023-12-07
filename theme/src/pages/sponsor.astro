@@ -1,0 +1,143 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'Landing Page #1 | Astro Odyssey Theme',
+	description: 'Landing Page #1 | Astro Odyssey Theme',
+};
+---
+
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Tap to Start Screen</h1>
+			<p>The first thing attendees see and interact with is the "Tap to Start" screen. With our sponsorship package, we customize this with your messaging and branding to maximize awareness for your business.</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="https://popstar-photo-booths.checkcherry.com/reservation/set_event?event_type_id=85323" customIcon
+				>Nice! <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/music.png"
+				alt="Astro Odyssee"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Custom Photo Frame</h1>
+			<p>After an attendee takes a picture(s), they are presented with their photos in a custom photo frame. We include your branding, logos, messaging to elevate and spread your brand.</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="https://popstar-photo-booths.checkcherry.com/reservation/set_event?event_type_id=85323" customIcon
+				>I Like It! <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/photo-frame.jpg"
+				alt="Astro Odyssee"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Email Call to Action</h1>
+			<p>After an attendee views their photo, they have the option to email it to themselves. The email they receive will have their photo and a section that we customize with your CTA, branding and any other information you would like to add.</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="https://popstar-photo-booths.checkcherry.com/reservation/set_event?event_type_id=85323" customIcon
+				>This is Good. <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/email.png"
+				alt="Astro Odyssee"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Image View</h1>
+			<p>After an attendee opens their email, they will click a link to download their photo. The photo landing page has a section that we customize for your business.</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="https://popstar-photo-booths.checkcherry.com/reservation/set_event?event_type_id=85323" customIcon
+				>Perfect! <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/image-view.png"
+				alt="Astro Odyssee"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Gallery View</h1>
+			<p>When an attendee clicks to view the gallery for the whole event, they will see a "Presented by: Your business name" as well as a CTA with a link of your chosing.</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="https://popstar-photo-booths.checkcherry.com/reservation/set_event?event_type_id=85323" customIcon
+				>Great! <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/home/gallery-view.png"
+				alt="Astro Odyssee"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+
+	<CtaCardSection>
+		<h2>Ready to Get Started?</h2>
+		<p>Let's do it!</p>
+		<Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" customIcon>
+		  Book Now
+		  <Fragment slot="icon">
+			<Icon name="ic:baseline-chevron-right" />
+		  </Fragment>
+		</Button>
+	  </CtaCardSection>
+
+</Layout>
+
+<style>
+#home-hero-image {
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+</style>
