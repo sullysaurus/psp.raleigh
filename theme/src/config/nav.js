@@ -10,5 +10,9 @@ export const nav = [
 	{
 		title: 'Contact',
 		slug: '/contact',
+	},
+	{
+		title: 'Sponsor',
+		slug: '/sponsor',
 	}
 ];

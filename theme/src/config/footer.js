@@ -32,7 +32,11 @@ export const footerLists = [
 			{
 				title: 'Contact',
 				slug: '/contact',
-			}
+			},
+      {
+        title: 'Sponsor',
+        slug: '/sponsor',
+      }
 		],
 	}
 ];
