@@ -11,6 +11,7 @@ import {
 } from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
 import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+import PhotoGridSection from '../../components/sections/PhotoGridSection.astro';
 
 const seo = {
 	title: 'Popstar Photo Booths | Sponsor a Booth',
@@ -19,6 +20,10 @@ const seo = {
 ---
 
 <Layout seo={seo} >
+	<CtaCardSection>
+		<h2>Sponsorship Overview</h2>
+		<p>This guide outlines the core features of a photo booth sponsorship. It takes you through the user journey from when they first interact with the "Tap to Start" screen all the way to viewing their picture. Each step along the way is an opporunity to showcase your brand and messaging.</p>
+	  </CtaCardSection>
 	<TextAndImageHero reversed>
 		<div slot="text-container">
 			<h1>Tap to Start Screen</h1>
