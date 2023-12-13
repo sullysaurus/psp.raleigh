@@ -93,3 +93,17 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-f7fd8d35-bdaa-469a-93fc-9750ecc0809d"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        var selector = '#eapps-google-reviews-f7fd8d35-bdaa-469a-93fc-9750ecc0809d > div > a';
+        var element = document.querySelector(selector);
+        if (element) {
+            element.parentNode.removeChild(element);
+        }
+    }, 5000); // Waits for 5000 milliseconds (5 seconds)
+}, false);
+
+
+</script>
