@@ -4,10 +4,8 @@ import {
   AnnouncementBar,
   Button,
   CustomerQuoteSection,
-  Container,
   StickyTextImageSection,
-  CtaCardSection,
-  FeatureCard,
+  CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
 import PhotoGridSection from '../../components/sections/PhotoGridSection.astro'
 import Layout from '../layouts/Page.astro';
@@ -19,22 +17,25 @@ const seo = {
 };
 ---
 
-<AnnouncementBar text="Read Our Google Reviews" href="https://g.page/r/CczYNMDcHxyIEBM/review" slot="announcement-bar"/>
+<AnnouncementBar text="Did you love working with us? Leave a Google review and support a small business!" href="https://g.page/r/CczYNMDcHxyIEBM/review" slot="announcement-bar"/>
 <Layout seo={seo} >
 	<HomeHeroSection />
 	<CustomerQuoteSection
-		quoteText="So much fun to have this easy to use photo booth at our family reunion! We have tons of memories to share with these photos!"
-		customerName="Laura Hendrix McKillop"
-	/>
+  quoteText="Dan and his team are amazing at ensuring your guests have fun creating memories with his various photobooths! You will not be disappointed!"
+  customerName="Micah Brown - Amore Planning Co."
+/>
   <StickyTextImageSection>
     <div slot="text-container">
       <h2>The Popstar Booth</h2>
+      <h3>Features</h3>
       <p>
         <ul>
           <li>Photos, videos, gifs, boomerangs</li>
           <li>Instagram style filters</li>
           <li>Text, email, air drop and QR code sharing</li>
           <li>Real time live gallery of all your event photos</li>
+		  <li>Custom photo templates</li>
+		  <li>Custom tap to start screen</li>
       </ul>
       </p>
       <h3>Perfect For</h3>
@@ -46,15 +47,8 @@ const seo = {
           <li>Brand Launches</li>
           <li>Weddings</li>
       </ul>
-	  <h3>Drop Off Service</h3>
-      <p>
-        <ul>
-          <li>We set up the booth 30 min before the party starts.</li>
-          <li>We break it down when it's done.</li>
-          <li>You save money.</li>
-          <li>We have discovered that people have more fun with drop off booths.</li>
-      </ul>
-      <Button href="/contact" slot="column-1-cta">Reserve Now</Button>
+      </p>
+      <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-1-cta">Check Date</Button>
       
     </div>
      <picture slot="image-container">
@@ -68,46 +62,115 @@ const seo = {
   <h3 class="centered">Gallery</h3>
   <PhotoGridSection>
 		<div slot="column-1-body">
-		  <img src="/assets/images/home/image1.jpg" alt="Form" />
+		  <img src="/assets/images/home/image4.jpg" alt="Form" />
 		</div>
 		<div slot="column-2-body">
-		  <img src="/assets/images/home/image2.jpg" alt="Select Date" />
+		  <img src="/assets/images/home/image3.jpg" alt="Select Date" />
     </div>
 		<div slot="column-3-body">
-		  <img src="/assets/images/home/image3.jpg" alt="Add Ons" />
+		  <img src="/assets/images/home/image5.jpg" alt="Add Ons" />
 		</div>
 	</PhotoGridSection>
   <PhotoGridSection>
 		<div slot="column-1-body">
-		  <img src="/assets/images/home/image4.jpg" alt="Back Drops" />
+		  <img src="/assets/images/home/image6.jpg" alt="Back Drops" />
 		</div>
 		<div slot="column-2-body">
-		  <img src="/assets/images/home/image5.jpg" alt="Venue" />
+		  <img src="/assets/images/home/image7.jpg" alt="Venue" />
     </div>
 		<div slot="column-3-body">
-		  <img src="/assets/images/home/image6.jpg" alt="Review" />
+		  <img src="/assets/images/home/image8.jpg" alt="Review" />
+		</div>
+	</PhotoGridSection>
+<div class="partners">
+  <div class="centered"><h3>Our Partners</h3></div>
+  <div class="trusted-by-section">
+    <img src="/assets/images/home/sofar.png" alt="Company Logo 1" class="trusted-logo" />
+    <img src="/assets/images/home/loop.png" alt="Company Logo 2" class="trusted-logo" />
+    <img src="/assets/images/home/bccc.png" alt="Company Logo 3" class="trusted-logo" />
+    <img src="/assets/images/home/recity.png" alt="Company Logo 3" class="trusted-logo" />
+  </div>
+</div>
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>The Rockstar Booth</h2>
+      <h3>Features</h3>
+      <p>
+        <ul>
+		  <li>Professional quality lighting</li>
+		  <li>Unlimited professional photos</li>
+          <li>Glam Mode option</li>
+          <li>Unlimited prints</li>
+		  <li>Photos, videos, gifs, boomerangs</li>
+          <li>Instagram style filters</li>
+          <li>Text, email, air drop and QR code sharing</li>
+          <li>Real time live gallery of all your event photos</li>
+		  <li>Custom photo templates</li>
+		  <li>Custom tap to start screen</li>
+      </ul>
+      </p>
+      <h3>Pefect For</h3>
+      <p>
+        <ul>
+		  <li>Upscale Weddings</li>
+		  <li>Red Carpet Events</li>
+          <li>High Budget Parties</li>
+      </ul>
+      </p>
+      <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-1-cta">Check Date</Button>
+      
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/home/rockstar-booth.jpg"
+        alt="Popstar Photo Booths"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+  <h3 class="centered">Gallery</h3>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/home/rock-1.jpeg" alt="Form" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/home/rock-2.jpeg" alt="Select Date" />
+    </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/home/rock-3.jpeg" alt="Add Ons" />
+		</div>
+	</PhotoGridSection>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/home/rock-4.jpeg" alt="Back Drops" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/home/rock-5.jpeg" alt="Venue" />
+        </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/home/rock-6.jpeg" alt="Review" />
 		</div>
 	</PhotoGridSection>
 	<PhotoGridSection>
 		<div slot="column-1-body">
-		  <img src="/assets/images/home/image7.jpg" alt="Back Drops" />
+		  <img src="/assets/images/home/rock-7.jpeg" alt="Back Drops" />
 		</div>
 		<div slot="column-2-body">
-		  <img src="/assets/images/home/image8.jpg" alt="Venue" />
-    </div>
+		  <img src="/assets/images/home/rock-8.jpeg" alt="Venue" />
+        </div>
 		<div slot="column-3-body">
-		  <img src="/assets/images/home/image9.jpg" alt="Review" />
+		  <img src="/assets/images/home/rock-9.jpeg" alt="Review" />
 		</div>
 	</PhotoGridSection>
-	<CustomerQuoteSection
-  quoteText="Dan and his team are amazing at ensuring your guests have fun creating memories with his various photobooths! You will not be disappointed!"
-  customerName="Micah Brown - Amore Planning Co."
+  <CustomerQuoteSection
+  quoteText="Great quality pictures to capture amazing memories! 5 stars for sure!!"
+  customerName="Danielle Vitti"
 />
   <CtaCardSection>
   <h2>Ready to get started?</h2>
   <p>Let's do it!</p>
-  <Button href="/contact" customIcon>
-    Reserve Now
+  <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" customIcon>
+    Get Quote
     <Fragment slot="icon">
       <Icon name="ic:baseline-chevron-right" />
     </Fragment>
@@ -117,23 +180,30 @@ const seo = {
 </Layout>
 
 <style>
+
+.trusted-by-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.trusted-logo {
+  max-width: 100px; /* Adjust the size as needed */
+  margin: 0 10px; /* Provides horizontal spacing */
+}
+
+.partners {
+  margin: calc(var(--section-margin) * 2) auto;
+  padding: 3rem;
+  background-color: var(--theme-surface-1);
+  text-align: center;
+}
+
 .centered {
   text-align: center;
 }
 img {
   border-radius: var(--theme-shape-radius);
 }
-.feature-card__section {
-		margin: var(--section-margin) auto;
-	}
-	.feature-card__grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: var(--theme-grid-gap);
-	}
-	@media (max-width: 768px) {
-		.feature-card__grid {
-			grid-template-columns: 1fr;
-		}
-	}
 </style>
