@@ -31,7 +31,7 @@ export const footerLists = [
 			},
 			{
 				title: 'Contact',
-				slug: 'https://popstar-photo-booths.checkcherry.com/reservation/event_type',
+				slug: '/contact',
 			},
       {
         title: 'Leads',
