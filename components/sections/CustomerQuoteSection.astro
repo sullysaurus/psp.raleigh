@@ -1,13 +1,14 @@
 ---
 import Container from '../core/Container.astro';
 
-const {quoteText, customerName} = Astro.props;
+const {quoteText, customerName, imageUrl} = Astro.props;
 ---
 
 <section class="customer-quote__section">
   <Container narrow>
     <blockquote>"{quoteText}"</blockquote>
     <p>&mdash; {customerName}</p>
+    <img src={imageUrl} alt="Google Review" class="google-image"/>
   </Container>
 </section>
 
@@ -26,4 +27,10 @@ const {quoteText, customerName} = Astro.props;
   font-style: italic;
   line-height: 1.8;
 }
+
+.google-image {
+  text-align: center; /* Center the image container */
+}
+
+
 </style>
