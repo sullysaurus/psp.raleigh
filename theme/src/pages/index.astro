@@ -3,13 +3,13 @@ import {Icon} from 'astro-icon'
 import {
   AnnouncementBar,
   Button,
-  CustomerQuoteSection,
   StickyTextImageSection,
   CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
 import PhotoGridSection from '../../components/sections/PhotoGridSection.astro'
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import CustomerQuoteSection from '../../components/sections/CustomerQuoteSection.astro';
 
 const seo = {
 	title: 'Popstar Photo Booths | Photo Booth Rental in Raleigh, NC',
@@ -23,6 +23,7 @@ const seo = {
 	<CustomerQuoteSection
   quoteText="Dan and his team are amazing at ensuring your guests have fun creating memories with his various photobooths! You will not be disappointed!"
   customerName="Micah Brown - Amore Planning Co."
+  imageUrl="/assets/images/home/reviews.png"
 />
   <StickyTextImageSection>
     <div slot="text-container">
@@ -166,6 +167,7 @@ const seo = {
   <CustomerQuoteSection
   quoteText="Great quality pictures to capture amazing memories! 5 stars for sure!!"
   customerName="Danielle Vitti"
+  imageUrl="/assets/images/home/reviews.png"
 />
   <CtaCardSection>
   <h2>Ready to get started?</h2>
