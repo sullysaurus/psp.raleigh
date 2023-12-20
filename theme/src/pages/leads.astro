@@ -11,6 +11,7 @@ import {
 } from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
 import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+import LeadsHeroSection from '../components/sections/heros/LeadsHeroSection.astro';
 
 const seo = {
 	title: 'Popstar Photo Booths | Lead Generation',
@@ -19,6 +20,7 @@ const seo = {
 ---
 
 <Layout seo={seo} >
+	<LeadsHeroSection />
 	<CtaCardSection>
 		<h2>Lead Generation Overview</h2>
 		<p>This guide outlines the core features of our lead generation funnel. It takes you through the user journey from when they first interact with the "Tap to Start" screen all the way to collecting data and remarketing. Each step along the way is an opporunity to showcase your brand and messaging, ultimately leading to data capture and new warm leads.</p>
