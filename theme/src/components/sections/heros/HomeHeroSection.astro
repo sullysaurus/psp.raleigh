@@ -12,17 +12,20 @@ import { Container, Button, YouTubeEmbedSection } from '@littlesticks/odyssey-th
 				Bringing people together one photo at a time.
 				</p>
 			<div class="hero-btns__container">
-				<Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" customIcon>Reserve Now
+				<Button href="/contact" customIcon>Reserve Now
 				<Fragment slot="icon">
 				<Icon name="ic:baseline-chevron-right"/>
 				</Fragment>
 				</Button>
 			</div>
+			<picture>
+			  <img src="/assets/images/home/knot.png">
+			</picture>
 		</div>
 		<div class="hero-section__image">
 			<picture>
 				<img
-					src="/assets/images/home/header.jpg"
+					src="/assets/images/home/header.png"
 					alt="Header Image"
 					id="home-hero-image"
 				/>
@@ -62,6 +65,12 @@ import { Container, Button, YouTubeEmbedSection } from '@littlesticks/odyssey-th
 	object-fit: cover;
 	border-radius: var(--theme-shape-radius);
 }
+
+.hero-section__text img {
+  max-width: 75%;
+  margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
 	.hero-section__section {
 		grid-template-columns: 1fr;
