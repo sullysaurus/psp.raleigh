@@ -28,7 +28,7 @@ const seo = {
   customerName="Micah Brown - Amore Planning Co."
   imageUrl="/assets/images/home/reviews.png"
 />
-  <!-- <StickyTextImageSection>
+  <StickyTextImageSection>
     <div slot="text-container">
       <h2>The Popstar Booth</h2>
       <p>
@@ -59,7 +59,7 @@ const seo = {
         loading="lazy"
       />
     </picture>
-  </StickyTextImageSection> -->
+  </StickyTextImageSection>
   <div class="centered">
     <h2>Photo Booth Packages</h2>
     <p>Choose your experience</p>
@@ -136,20 +136,24 @@ const seo = {
       />
     </picture>
   </StickyTextImageSection> -->
-  <h3 class="centered">Custom Templates</h3>
-  <PhotoGridSection>
-		<div slot="column-1-body">
-		  <img src="/assets/images/events/wines.jpeg" alt="Custom Template" />
-		</div>
-    <div slot="column-2-body">
-		  <img src="/assets/images/events/high.jpeg" alt="Custom Template" />
-    </div>
-    <div slot="column-3-body">
-		  <img src="/assets/images/events/give.jpeg" alt="Custom Template" />
-		</div>
-	</PhotoGridSection>
-  <h3 class="centered">Custom Backdrops</h3>
-		<iframe src="https://widget.pbbackdrops.com/embed/v1/7f8756ca-63ff-4eea-a4f0-54d138ef40a4" style="width:100%;height:700px;border:none;"></iframe>
+  <div class="templates">
+    <h3 class="centered">Custom Templates</h3>
+    <PhotoGridSection>
+      <div slot="column-1-body">
+        <img src="/assets/images/events/wines.jpeg" alt="Custom Template" />
+      </div>
+      <div slot="column-2-body">
+        <img src="/assets/images/events/high.jpeg" alt="Custom Template" />
+      </div>
+      <div slot="column-3-body">
+        <img src="/assets/images/events/give.jpeg" alt="Custom Template" />
+      </div>
+    </PhotoGridSection>
+  </div>
+  <div class="backdrops">
+    <h3 class="centered">Custom Backdrops</h3>
+	  <iframe src="https://widget.pbbackdrops.com/embed/v1/7f8756ca-63ff-4eea-a4f0-54d138ef40a4" style="width:100%;height:1300px;border:none;"></iframe>
+  </div>
   <CustomerQuoteSection
   quoteText="Danny is a delight to work with and the pictures are wonderful! Will definitely use him again!"
   customerName="Christine Worsham - Wines for Humanity"
@@ -208,11 +212,15 @@ const seo = {
 .centered {
   text-align: center;
 }
+
 /* 
 img {
   border-radius: var(--theme-shape-radius);
 } */
 
+.backdrops {
+  margin-top: 2rem;
+}
 
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
   .trusted-by-section {
