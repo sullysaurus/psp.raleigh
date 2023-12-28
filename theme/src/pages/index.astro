@@ -12,6 +12,7 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 import CustomerQuoteSection from '../../components/sections/CustomerQuoteSection.astro';
 import GoogleReviewSection from '../../components/sections/GoogleReviewSection.astro';
 import PhotoBoothPackagesSection from '../../components/sections/PhotoBoothPackagesSection.astro';
+import HeroSection from '../components/sections/heros/HeroSection.astro';
 
 const seo = {
 	title: 'Popstar Photo Booths | Photo Booth Rental in Raleigh, NC',
@@ -154,6 +155,21 @@ const seo = {
   customerName="Christine Worsham - Wines for Humanity"
   imageUrl="/assets/images/home/reviews.png"
 />
+<HeroSection>
+  <div slot="text-container">
+    <h1>About Popstar Photo Booths</h1>
+    <p>
+      Popstar Photo Booths was founded by husband and wife duo, Danny and Danea Sullivan. With Danny's experience as a professional baseball player and Danea's history as a Disney World dancer, they both understand the intricate details and dedication necessary for success. Their diverse experiences are the backbone of their commitment to taking your event to a higher level. Trust them to bring a unique touch to your occasion with their balanced blend of passion and professionalism. For an event that truly stands out, contact Popstar Photo Booths today!
+    </p>
+  </div>
+  <picture slot="image-container">
+    <img
+      src="/assets/images/home/about.jpg"
+      alt="About us"
+      id="home-hero-image"
+    />
+  </picture>
+</HeroSection>
   <CtaCardSection>
   <h2>Ready to get started?</h2>
   <p>Let's do it!</p>
