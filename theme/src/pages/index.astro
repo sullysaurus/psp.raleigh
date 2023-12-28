@@ -4,13 +4,13 @@ import {
   AnnouncementBar,
   Button,
   StickyTextImageSection,
-  CtaCardSection
+  CtaCardSection,
+  Container
 } from '@littlesticks/odyssey-theme-components';
 import PhotoGridSection from '../../components/sections/PhotoGridSection.astro'
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 import CustomerQuoteSection from '../../components/sections/CustomerQuoteSection.astro';
-import GoogleReviewSection from '../../components/sections/GoogleReviewSection.astro';
 import PhotoBoothPackagesSection from '../../components/sections/PhotoBoothPackagesSection.astro';
 import HeroSection from '../components/sections/heros/HeroSection.astro';
 
@@ -84,58 +84,27 @@ const seo = {
     </div>
     <Button href="/contact" slot="column-3-cta">Check Availability</Button>
   </PhotoBoothPackagesSection>
-  <GoogleReviewSection/>
-<div class="partners">
-  <div class="centered"><h3>Our Partners</h3></div>
-  <div class="trusted-by-section">
-    <img src="/assets/images/home/bccc.png" alt="Company Logo" class="trusted-logo" />
-    <img src="/assets/images/home/traine.png" alt="Company Logo" class="trusted-logo" />
-    <img src="/assets/images/home/cam.png" alt="Company Logo" class="trusted-logo" />
-    <img src="/assets/images/home/wfh.png" alt="Company Logo" class="trusted-logo" />
-    <img src="/assets/images/home/loop.png" alt="Company Logo" class="trusted-logo" />
-    <img src="/assets/images/home/dbc.png" alt="Company Logo" class="trusted-logo" />
-    <img src="/assets/images/home/sofar.png" alt="Company Logo" class="trusted-logo" />
-    <img src="/assets/images/home/recity.png" alt="Company Logo" class="trusted-logo" />
-    <img src="/assets/images/home/foundation.png" alt="Company Logo" class="trusted-logo" />
+  <div class="google-review-section">
+  <Container wide>
+    <h3 style="text-align: center;">Customer Love</h3>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-8164c114-40b6-4539-90d4-0368aa3a51ee" data-elfsight-app-lazy></div>
+  </Container>
   </div>
-</div>
-  <!-- <StickyTextImageSection>
-    <div slot="text-container">
-      <h2>The Rockstar Booth</h2>
-      <p>
-        <ul>
-          <li>Professional attendant</li>
-          <li>Professional quality lighting</li>
-          <li>Unlimited professional photos</li>
-          <li>Glam Mode option</li>
-          <li>Unlimited prints</li>
-		      <li>Photos, videos, gifs, boomerangs</li>
-          <li>Instagram style filters</li>
-          <li>Text, email, air drop and QR code sharing</li>
-          <li>Real time live gallery of all your event photos</li>
-		      <li>Custom photo templates</li>
-		       <li>Custom tap to start screen</li>
-      </ul>
-      </p>
-      <h3>Pefect For</h3>
-      <p>
-        <ul>
-		  <li>Upscale Weddings</li>
-		  <li>Red Carpet Events</li>
-          <li>High Budget Parties</li>
-      </ul>
-      </p>
-      <Button href="/contact" slot="column-1-cta">Check Availability</Button>
-      
+  <div class="partners">
+    <div class="centered"><h3>Our Partners</h3></div>
+    <div class="trusted-by-section">
+      <img src="/assets/images/home/bccc.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/home/traine.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/home/cam.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/home/wfh.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/home/loop.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/home/dbc.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/home/sofar.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/home/recity.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/home/foundation.png" alt="Company Logo" class="trusted-logo" />
     </div>
-     <picture slot="image-container">
-      <img
-        src="/assets/images/home/rockstar-booth.jpg"
-        alt="Popstar Photo Booths"
-        loading="lazy"
-      />
-    </picture>
-  </StickyTextImageSection> -->
+  </div>
   <div class="templates">
     <h3 class="centered">Custom Templates</h3>
     <PhotoGridSection>
@@ -152,7 +121,7 @@ const seo = {
   </div>
   <div class="backdrops">
     <h3 class="centered">Custom Backdrops</h3>
-	  <iframe src="https://widget.pbbackdrops.com/embed/v1/7f8756ca-63ff-4eea-a4f0-54d138ef40a4" style="width:100%;height:1300px;border:none;"></iframe>
+	  <iframe src="https://widget.pbbackdrops.com/embed/v1/7f8756ca-63ff-4eea-a4f0-54d138ef40a4" style="width:100%;height:700px;border:none;"></iframe>
   </div>
   <CustomerQuoteSection
   quoteText="Danny is a delight to work with and the pictures are wonderful! Will definitely use him again!"
@@ -161,7 +130,7 @@ const seo = {
 />
 <HeroSection>
   <div slot="text-container">
-    <h1>About Popstar Photo Booths</h1>
+    <h1>Meet the Owners</h1>
     <p>
       Popstar Photo Booths was founded by husband and wife duo, Danny and Danea Sullivan. With Danny's experience as a professional baseball player and Danea's history as a Disney World dancer, they both understand the intricate details and dedication necessary for success. Their diverse experiences are the backbone of their commitment to taking your event to a higher level. Trust them to bring a unique touch to your occasion with their balanced blend of passion and professionalism. For an event that truly stands out, contact Popstar Photo Booths today!
     </p>
@@ -213,12 +182,16 @@ const seo = {
   text-align: center;
 }
 
-/* 
-img {
+
+.partners img {
   border-radius: var(--theme-shape-radius);
-} */
+}
 
 .backdrops {
+  margin-top: 2rem;
+}
+
+.google-review-section{
   margin-top: 2rem;
 }
 
