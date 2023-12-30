@@ -11,7 +11,6 @@ import PhotoGridSection from '../../components/sections/PhotoGridSection.astro'
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
 import CustomerQuoteSection from '../../components/sections/CustomerQuoteSection.astro';
-import PhotoBoothPackagesSection from '../../components/sections/PhotoBoothPackagesSection.astro';
 import HeroSection from '../components/sections/heros/HeroSection.astro';
 
 const seo = {
@@ -26,7 +25,7 @@ const seo = {
 	<CustomerQuoteSection
   quoteText="Dan and his team are amazing at ensuring your guests have fun creating memories with his various photobooths! You will not be disappointed!"
   customerName="Micah Brown - Amore Planning Co."
-  imageUrl="/assets/images/home/reviews.png"
+  imageUrl="/assets/images/reviews.png"
 />
   <StickyTextImageSection>
     <div slot="text-container">
@@ -37,6 +36,8 @@ const seo = {
           <li>Instagram style filters</li>
           <li>Text, email, air drop and QR code sharing</li>
           <li>Real time live gallery of all your event photos</li>
+          <li>Color and black and white (glam) photos</li>
+          <li>Lots of upgrades available</li>
       </ul>
       </p>
       <h3>Perfect For</h3>
@@ -50,40 +51,51 @@ const seo = {
       </ul>
       </p>
       <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-1-cta">Get Pricing</Button>
-      
     </div>
      <picture slot="image-container">
       <img
-        src="/assets/images/home/popstar-booth.jpg"
+        src="/assets/images/salsa.jpeg"
         alt="Popstar Photo Booths"
         loading="lazy"
       />
     </picture>
   </StickyTextImageSection>
-  <div class="centered">
-    <h2>Photo Booth Packages</h2>
-    <p>Choose your experience</p>
+  <div class="gallery">
+  <h3 class="centered">Gallery</h3>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/gallery1.jpg" alt="photo" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/gallery2.jpg" alt="photo" />
+    </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/gallery6.jpg" alt="photo" />
+		</div>
+	</PhotoGridSection>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/gallery4.jpg" alt="photo" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/gallery5.jpg" alt="photo" />
+    </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/gallery3.jpg" alt="photo" />
+		</div>
+	</PhotoGridSection>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/gallery7.jpg" alt="photo" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/gallery8.jpg" alt="photo" />
+    </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/gallery9.jpg" alt="photo" />
+		</div>
+	</PhotoGridSection>
   </div>
-  <PhotoBoothPackagesSection>
-    <div slot="column-1-body">
-      <img src="/assets/images/home/popstar.jpg" alt="Popstar Booth" />
-      <h4>Popstar Booth</h4>
-      <p>Your classic photo booth experience with a custom photo overlay, fun filters and props. Perfect for all events.</p>
-    </div>
-    <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-1-cta">Get Pricing</Button>
-    <div slot="column-2-body">
-      <img src="/assets/images/home/glam1.jpg" alt="Glam Booth" />
-      <h4>Glam Booth</h4>
-      <p>This is our classy black & white photo booth experience. It's enhanced by our glam skin smooth filter.</p>
-    </div>
-    <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-2-cta">Get Pricing</Button>
-    <div slot="column-3-body">
-      <img src="/assets/images/home/green.jpg" alt="Green Screen" />
-      <h4>The Green Room</h4>
-      <p>This is our magic green screen booth. You will have five green screen backgrounds to choose from. Really fun for branding, great for all events.</p>
-    </div>
-    <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-3-cta">Get Pricing</Button>
-  </PhotoBoothPackagesSection>
   <div class="google-review-section">
   <Container wide>
     <h3 style="text-align: center;">Customer Love</h3>
@@ -94,98 +106,62 @@ const seo = {
   <div class="partners">
     <div class="centered"><h3>Our Partners</h3></div>
     <div class="trusted-by-section">
-      <img src="/assets/images/home/bccc.png" alt="Company Logo" class="trusted-logo" />
-      <img src="/assets/images/home/traine.png" alt="Company Logo" class="trusted-logo" />
-      <img src="/assets/images/home/cam.png" alt="Company Logo" class="trusted-logo" />
-      <img src="/assets/images/home/wfh.png" alt="Company Logo" class="trusted-logo" />
-      <img src="/assets/images/home/loop.png" alt="Company Logo" class="trusted-logo" />
-      <img src="/assets/images/home/dbc.png" alt="Company Logo" class="trusted-logo" />
-      <img src="/assets/images/home/sofar.png" alt="Company Logo" class="trusted-logo" />
-      <img src="/assets/images/home/recity.png" alt="Company Logo" class="trusted-logo" />
-      <img src="/assets/images/home/foundation.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/bccc.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/traine.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/cam.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/wfh.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/loop.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/dbc.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/sofar.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/recity.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/foundation.png" alt="Company Logo" class="trusted-logo" />
     </div>
   </div>
   <div class="templates">
     <h3 class="centered">Custom Templates</h3>
+    <p class="centered">Available as an upgrade</p>
     <PhotoGridSection>
       <div slot="column-1-body">
-        <img src="/assets/images/events/wines.jpeg" alt="Custom Template" />
+        <img src="/assets/images/popstar.jpg" alt="Custom Template" />
       </div>
       <div slot="column-2-body">
-        <img src="/assets/images/events/high.jpeg" alt="Custom Template" />
+        <img src="/assets/images/prom.jpeg" alt="Custom Template" />
       </div>
       <div slot="column-3-body">
-        <img src="/assets/images/events/give.jpeg" alt="Custom Template" />
+        <img src="/assets/images/give.jpeg" alt="Custom Template" />
       </div>
     </PhotoGridSection>
   </div>
   <div class="backdrops">
     <h3 class="centered">Custom Backdrops</h3>
-    <p class="centered">Many more options available</p>
+    <p class="centered">Available as an upgrade</p>
     <PhotoGridSection>
       <div slot="column-1-body">
-        <img src="/assets/images/backdrops/bd-1.jpeg" alt="Backdrop" />
+        <img src="/assets/images/bd-1.jpeg" alt="Backdrop" />
       </div>
       <div slot="column-2-body">
-        <img src="/assets/images/backdrops/bd-2.jpeg" alt="Backdrop" />
+        <img src="/assets/images/bd-2.jpeg" alt="Backdrop" />
       </div>
       <div slot="column-3-body">
-        <img src="/assets/images/backdrops/bd-3.jpeg" alt="Backdrop" />
+        <img src="/assets/images/bd-3.jpeg" alt="Backdrop" />
       </div>
     </PhotoGridSection>
     <PhotoGridSection>
       <div slot="column-1-body">
-        <img src="/assets/images/backdrops/bd-4.jpeg" alt="Backdrop" />
+        <img src="/assets/images/bd-4.jpeg" alt="Backdrop" />
       </div>
       <div slot="column-2-body">
-        <img src="/assets/images/backdrops/bd-5.jpeg" alt="Backdrop" />
+        <img src="/assets/images/bd-5.jpeg" alt="Backdrop" />
       </div>
       <div slot="column-3-body">
-        <img src="/assets/images/backdrops/bd-6.jpeg" alt="Backdrop" />
-      </div>
-    </PhotoGridSection>
-  </div>
-  <div class="backdrops">
-    <h3 class="centered">Custom Props</h3>
-    <p class="centered">Many more options available</p>
-    <PhotoGridSection>
-      <div slot="column-1-body">
-        <img src="/assets/images/props/prop-1.jpg" alt="Prop" />
-      </div>
-      <div slot="column-2-body">
-        <img src="/assets/images/props/prop-2.jpg" alt="Prop" />
-      </div>
-      <div slot="column-3-body">
-        <img src="/assets/images/props/prop-3.jpg" alt="Prop" />
-      </div>
-    </PhotoGridSection>
-    <PhotoGridSection>
-      <div slot="column-1-body">
-        <img src="/assets/images/props/prop-4.jpg" alt="Prop" />
-      </div>
-      <div slot="column-2-body">
-        <img src="/assets/images/props/prop-5.jpg" alt="Prop" />
-      </div>
-      <div slot="column-3-body">
-        <img src="/assets/images/props/prop-6.jpg" alt="Prop" />
-      </div>
-    </PhotoGridSection>
-    <PhotoGridSection>
-      <div slot="column-1-body">
-        <img src="/assets/images/props/prop-7.jpg" alt="Prop" />
-      </div>
-      <div slot="column-2-body">
-        <img src="/assets/images/props/prop-8.jpg" alt="Prop" />
-      </div>
-      <div slot="column-3-body">
-        <img src="/assets/images/props/prop-9.jpg" alt="Prop" />
+        <img src="/assets/images/bd-6.jpeg" alt="Backdrop" />
       </div>
     </PhotoGridSection>
   </div>
   <CustomerQuoteSection
   quoteText="Danny is a delight to work with and the pictures are wonderful! Will definitely use him again!"
   customerName="Christine Worsham - Wines for Humanity"
-  imageUrl="/assets/images/home/reviews.png"
+  imageUrl="/assets/images/reviews.png"
 />
 <HeroSection>
   <div slot="text-container">
@@ -196,7 +172,7 @@ const seo = {
   </div>
   <picture slot="image-container">
     <img
-      src="/assets/images/home/about.jpg"
+      src="/assets/images/about.jpg"
       alt="About us"
       id="home-hero-image"
     />
@@ -243,6 +219,10 @@ const seo = {
 
 
 .partners img {
+  border-radius: var(--theme-shape-radius);
+}
+
+.gallery img {
   border-radius: var(--theme-shape-radius);
 }
 
