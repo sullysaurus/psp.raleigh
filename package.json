@@ -12,5 +12,8 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"format": "npx prettier -w ."
+	},
+	"dependencies": {
+		"elevator.js": "^1.0.1"
 	}
 }
