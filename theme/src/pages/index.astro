@@ -43,14 +43,15 @@ const seo = {
       <h3>Perfect For</h3>
       <p>
         <ul>
+          <li>Weddings</li>
           <li>Concerts</li>
           <li>Birthday Parties</li>
           <li>Holiday Parties</li>
           <li>Brand Launches</li>
-          <li>Weddings</li>
+          <li>Corporate Events</li>
       </ul>
       </p>
-      <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-1-cta">Get Pricing</Button>
+      <Button href="/contact" slot="column-1-cta">Check Availability</Button>
     </div>
      <picture slot="image-container">
       <img
@@ -117,9 +118,8 @@ const seo = {
       <img src="/assets/images/foundation.png" alt="Company Logo" class="trusted-logo" />
     </div>
   </div>
-  <div class="features">
+  <div class="features mg">
     <h3 class="centered">Capture Modes</h3>
-    <p class="centered">Available as an upgrade</p>
     <PhotoGridSection>
       <div slot="column-1-body">
         <video src="/assets/images/gifs.mp4" alt="Custom Template" controls autoplay style="max-width: 100%; height: auto;" />
@@ -131,9 +131,8 @@ const seo = {
         <video src="/assets/images/videos.mp4" alt="Custom Template" controls autoplay style="max-width: 100%; height: auto;" />
       </div>
     </PhotoGridSection>    
-  <div class="templates">
+  <div class="templates mg">
     <h3 class="centered">Custom Templates</h3>
-    <p class="centered">Available as an upgrade</p>
     <PhotoGridSection>
       <div slot="column-1-body">
         <img src="/assets/images/popstar.jpg" alt="Custom Template" />
@@ -146,9 +145,8 @@ const seo = {
       </div>
     </PhotoGridSection>
   </div>
-  <div class="backdrops">
+  <div class="backdrops mg">
     <h3 class="centered">Custom Backdrops</h3>
-    <p class="centered">Available as an upgrade</p>
     <PhotoGridSection>
       <div slot="column-1-body">
         <img src="/assets/images/bd-1.jpeg" alt="Backdrop" />
@@ -192,18 +190,20 @@ const seo = {
     />
   </picture>
 </HeroSection>
+<!-- <Container wide>
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-d7e02e8b-1e8b-41b5-a200-9c62c6eb5dfc" data-elfsight-app-lazy></div>
+</Container> -->
   <CtaCardSection>
   <h2>Ready to get started?</h2>
   <p>Let's do it!</p>
-  <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" customIcon>
-    Get Quote
+  <Button href="/contact" customIcon>
+    Check Availability
     <Fragment slot="icon">
       <Icon name="ic:baseline-chevron-right" />
     </Fragment>
   </Button>
-  <div class="elevator-button">Back to Top</div>
 </CtaCardSection>
-
 </Layout>
 
 <style>
@@ -243,6 +243,10 @@ const seo = {
 
 .backdrops {
   margin-top: 2rem;
+}
+
+.mg {
+  margin: 2rem;
 }
 
 .google-review-section{
