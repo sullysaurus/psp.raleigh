@@ -1,0 +1,413 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+  Button,
+  StickyTextImageSection,
+  CtaCardSection,
+  Container
+} from '@littlesticks/odyssey-theme-components';
+import PhotoGridSection from '../../components/sections/PhotoGridSection.astro'
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import CustomerQuoteSection from '../../components/sections/CustomerQuoteSection.astro';
+import HeroSection from '../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'Popstar Photo Booths | Wedding Photo Booth Rentals in Raleigh, NC',
+	description: 'Wedding photo bbooth rentals in Raleigh. Photo booth rentals near me. Photo booth rentals in Raleigh. Wedding photo booth rentals Raleigh.',
+};
+---
+
+<!-- <AnnouncementBar text="Did you love working with us? Leave a Google review and support a small business!" href="https://g.page/r/CczYNMDcHxyIEBM/review" slot="announcement-bar"/> -->
+<Layout seo={seo} >
+  <Container>
+    <section class="hero-section__section">
+      <div class="hero-section__text">
+        <h1>Wedding Photo Booths</h1>
+          <p>
+            Wedding photo booth rentals in Raleigh, NC and surrounding areas.
+          </p>
+        <div class="hero-btns__container">
+          <Button href="https://popstar-photo-booths.checkcherry.com/reservation/" customIcon>Get Prices
+          <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+          </Fragment>
+          </Button>
+        </div>
+      </div>
+      <picture slot="image-container">
+        <img
+          src="/assets/images/wedding6.jpeg"
+          alt="Popstar Photo Booths"
+          loading="lazy"
+        />
+      </picture>
+    </section>
+  </Container>
+	<CustomerQuoteSection
+  quoteText="Dan and his team are amazing at ensuring your guests have fun creating memories with his various photobooths! You will not be disappointed!"
+  customerName="Micah Brown - Amore Planning Co."
+  imageUrl="/assets/images/reviews.png"
+/>
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>The Popstar Booth</h2>
+      <p>
+        <ul>
+          <li>Unlimited digital photos</li>
+          <li>Instagram style filters</li>
+          <li>Text and email your photos</li>
+          <li>Real time live gallery of all your event photos</li>
+          <li>Color and black and white (glam) options</li>
+      </ul>
+      </p>
+      <h3>Perfect For</h3>
+      <p>
+        <ul>
+          <li>Weddings</li>
+          <li>Concerts</li>
+          <li>Birthdays</li>
+          <li>Holiday Parties</li>
+          <li>Brand Activations</li>
+          <li>Corporate Events</li>
+      </ul>
+      </p>
+      <Button href="https://popstar-photo-booths.checkcherry.com/reservation/" slot="column-1-cta">Get Prices</Button>
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/salsa-booth.jpeg"
+        alt="Popstar Photo Booths"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+  <div class="google-review-section">
+  <Container wide>
+    <h3 style="text-align: center;">Customer Love</h3>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-8164c114-40b6-4539-90d4-0368aa3a51ee" data-elfsight-app-lazy></div>
+  </Container>
+  </div>
+  <div class="gallery mg">
+    <h3 class="centered">Gallery</h3>
+    <PhotoGridSection>
+      <div slot="column-1-body">
+        <img src="/assets/images/gallery1.jpg" alt="photo" />
+      </div>
+      <div slot="column-2-body">
+        <img src="/assets/images/gallery10.jpg" alt="photo" />
+      </div>
+      <div slot="column-3-body">
+        <img src="/assets/images/gallery6.jpg" alt="photo" />
+      </div>
+    </PhotoGridSection>
+    <PhotoGridSection>
+      <div slot="column-1-body">
+        <img src="/assets/images/gallery4.jpg" alt="photo" />
+      </div>
+      <div slot="column-2-body">
+        <img src="/assets/images/gallery11.jpg" alt="photo" />
+      </div>
+      <div slot="column-3-body">
+        <img src="/assets/images/gallery3.jpg" alt="photo" />
+      </div>
+    </PhotoGridSection>
+    <PhotoGridSection>
+      <div slot="column-1-body">
+        <img src="/assets/images/gallery7.jpg" alt="photo" />
+      </div>
+      <div slot="column-2-body">
+        <img src="/assets/images/gallery8.jpg" alt="photo" />
+      </div>
+      <div slot="column-3-body">
+        <img src="/assets/images/gallery9.jpg" alt="photo" />
+      </div>
+    </PhotoGridSection>
+    </div>
+  <div class="partners">
+    <div class="centered"><h3>Our Partners</h3></div>
+    <div class="trusted-by-section">
+      <img src="/assets/images/bccc.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/traine.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/cam.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/wfh.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/loop.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/dbc.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/sofar.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/recity.png" alt="Company Logo" class="trusted-logo" />
+      <img src="/assets/images/foundation.png" alt="Company Logo" class="trusted-logo" />
+    </div>
+  </div>
+  <div class="rockstar">
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>The Rockstar Booth</h2>
+      <h3>Features</h3>
+      <p>
+        <ul>
+		  <li>Professional quality lighting</li>
+		  <li>Unlimited professional photos</li>
+          <li>Glam Mode option</li>
+          <li>Unlimited prints</li>
+		  <li>Photos, videos, gifs, boomerangs</li>
+          <li>Instagram style filters</li>
+          <li>Text, email, air drop and QR code sharing</li>
+          <li>Real time live gallery of all your event photos</li>
+		  <li>Custom photo templates</li>
+		  <li>Custom tap to start screen</li>
+      </ul>
+      </p>
+      <h3>Pefect For</h3>
+      <p>
+        <ul>
+		     <li>Upscale Weddings</li>
+		     <li>Red Carpet Events</li>
+          <li>High Budget Parties</li>
+      </ul>
+      </p>
+      <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-1-cta">Get Prices</Button>
+      
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/rockstar-booth.jpg"
+        alt="Popstar Photo Booths"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+  <h3 class="centered">Gallery</h3>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/rock-1.jpeg" alt="Form" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/rock-2.jpeg" alt="Select Date" />
+    </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/rock-3.jpeg" alt="Add Ons" />
+		</div>
+	</PhotoGridSection>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/rock-4.jpeg" alt="Back Drops" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/rock-5.jpeg" alt="Venue" />
+        </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/rock-6.jpeg" alt="Review" />
+		</div>
+	</PhotoGridSection>
+	<PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/rock-7.jpeg" alt="Back Drops" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/rock-8.jpeg" alt="Venue" />
+        </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/rock-9.jpeg" alt="Review" />
+		</div>
+	</PhotoGridSection>
+  </div>
+  <CustomerQuoteSection
+  quoteText="Great quality pictures to capture amazing memories! 5 stars for sure!!"
+  customerName="Danielle Vitti"
+  imageUrl="/assets/images/reviews.png"
+/>
+  <div class="features mg">
+    <h3 class="centered">Capture Modes</h3>
+    <PhotoGridSection>
+      <div slot="column-1-body">
+        <video src="/assets/images/gifs.mp4" alt="Custom Template" controls autoplay style="max-width: 100%; height: auto;" />
+      </div>
+      <div slot="column-2-body">
+        <video src="/assets/images/boomerangs.mp4" alt="Custom Template" controls autoplay style="max-width: 100%; height: auto;" />
+      </div>
+      <div slot="column-3-body">
+        <video src="/assets/images/videos.mp4" alt="Custom Template" controls autoplay style="max-width: 100%; height: auto;" />
+      </div>
+    </PhotoGridSection>    
+  <div class="templates mg">
+    <h3 class="centered">Custom Templates</h3>
+    <PhotoGridSection>
+      <div slot="column-1-body">
+        <img src="/assets/images/popstar.jpg" alt="Custom Template" />
+      </div>
+      <div slot="column-2-body">
+        <img src="/assets/images/prom.jpeg" alt="Custom Template" />
+      </div>
+      <div slot="column-3-body">
+        <img src="/assets/images/give.jpeg" alt="Custom Template" />
+      </div>
+    </PhotoGridSection>
+  </div>
+  <div class="backdrops mg">
+    <h3 class="centered">Custom Backdrops</h3>
+    <PhotoGridSection>
+      <div slot="column-1-body">
+        <img src="/assets/images/bd-1.jpeg" alt="Backdrop" />
+      </div>
+      <div slot="column-2-body">
+        <img src="/assets/images/bd-2.jpeg" alt="Backdrop" />
+      </div>
+      <div slot="column-3-body">
+        <img src="/assets/images/bd-3.jpeg" alt="Backdrop" />
+      </div>
+    </PhotoGridSection>
+    <PhotoGridSection>
+      <div slot="column-1-body">
+        <img src="/assets/images/bd-4.jpeg" alt="Backdrop" />
+      </div>
+      <div slot="column-2-body">
+        <img src="/assets/images/bd-5.jpeg" alt="Backdrop" />
+      </div>
+      <div slot="column-3-body">
+        <img src="/assets/images/bd-6.jpeg" alt="Backdrop" />
+      </div>
+    </PhotoGridSection>
+  </div>
+  <CustomerQuoteSection
+  quoteText="Danny is a delight to work with and the pictures are wonderful! Will definitely use him again!"
+  customerName="Christine Worsham - Wines for Humanity"
+  imageUrl="/assets/images/reviews.png"
+/>
+<HeroSection>
+  <div slot="text-container">
+    <h1>Meet the Owners</h1>
+    <p>
+      Popstar Photo Booths was founded by husband and wife duo, Danny and Danea Sullivan. With Danny's experience as a professional baseball player and Danea's history as a Disney World dancer, they both understand the intricate details and dedication necessary for success. Their diverse experiences are the backbone of their commitment to taking your event to a higher level. Trust them to bring a unique touch to your occasion with their balanced blend of passion and professionalism. For an event that truly stands out, contact Popstar Photo Booths today!
+    </p>
+  </div>
+  <picture slot="image-container">
+    <img
+      src="/assets/images/about.jpg"
+      alt="About us"
+      id="home-hero-image"
+    />
+  </picture>
+</HeroSection>
+<!-- <Container wide>
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-d7e02e8b-1e8b-41b5-a200-9c62c6eb5dfc" data-elfsight-app-lazy></div>
+</Container> -->
+  <CtaCardSection>
+  <h2>Ready to get started?</h2>
+  <p>Let's do it!</p>
+  <Button href="https://popstar-photo-booths.checkcherry.com/reservation/" customIcon>
+    Get Prices
+    <Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right" />
+    </Fragment>
+  </Button>
+</CtaCardSection>
+</Layout>
+
+<style>
+
+.trusted-by-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px; 
+}
+
+.trusted-logo {
+  max-width: 100px; /* Adjust the size as needed */
+  margin: 0 10px; /* Provides horizontal spacing */
+}
+
+
+.partners {
+  margin: calc(var(--section-margin) * 2) auto;
+  padding: 3rem;
+  background-color: var(--theme-surface-1);
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.partners img {
+  border-radius: var(--theme-shape-radius);
+}
+
+.gallery img {
+  border-radius: var(--theme-shape-radius);
+}
+
+.rockstar img {
+  border-radius: var(--theme-shape-radius);
+}
+
+.backdrops {
+  margin-top: 2rem;
+}
+
+.mg {
+  margin-top: 2rem;
+}
+
+.hero-section__section {
+	margin: var(--section-margin) auto;
+	min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 1rem;
+}
+
+.hero-section__section img {
+  border-radius: var(--theme-shape-radius);
+}
+
+.hero-section__text {
+	justify-self: center;
+	max-width: 25rem;
+}
+.hero-btns__container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.hero-btns__container {
+	margin-right: 1rem;
+}
+.hero-section__image {
+	display: flex;
+}
+
+.hero-section__image img {
+	width: 100%;
+	height: 100%;
+	max-height: 80vh;
+	object-fit: cover;
+}
+
+.hero-section__text img {
+  max-width: 75%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+	.hero-section__section {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .trusted-by-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trusted-logo {
+    max-width: 100px; /* Smaller size for mobile */
+    margin: 10px 0; /* Adjust margin for vertical layout */
+  }
+}
+</style>
