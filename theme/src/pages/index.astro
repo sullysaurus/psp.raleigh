@@ -118,6 +118,83 @@ const seo = {
       <img src="/assets/images/foundation.png" alt="Company Logo" class="trusted-logo" />
     </div>
   </div>
+  <div class="rockstar">
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>The Rockstar Booth</h2>
+      <h3>Features</h3>
+      <p>
+        <ul>
+		  <li>Professional quality lighting</li>
+		  <li>Unlimited professional photos</li>
+          <li>Glam Mode option</li>
+          <li>Unlimited prints</li>
+		  <li>Photos, videos, gifs, boomerangs</li>
+          <li>Instagram style filters</li>
+          <li>Text, email, air drop and QR code sharing</li>
+          <li>Real time live gallery of all your event photos</li>
+		  <li>Custom photo templates</li>
+		  <li>Custom tap to start screen</li>
+      </ul>
+      </p>
+      <h3>Pefect For</h3>
+      <p>
+        <ul>
+		     <li>Upscale Weddings</li>
+		     <li>Red Carpet Events</li>
+          <li>High Budget Parties</li>
+      </ul>
+      </p>
+      <Button href="https://popstar-photo-booths.checkcherry.com/reservation/event_type" slot="column-1-cta">Get Prices</Button>
+      
+    </div>
+     <picture slot="image-container">
+      <img
+        src="/assets/images/rockstar-booth.jpg"
+        alt="Popstar Photo Booths"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+  <h3 class="centered">Gallery</h3>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/rock-1.jpeg" alt="Form" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/rock-2.jpeg" alt="Select Date" />
+    </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/rock-3.jpeg" alt="Add Ons" />
+		</div>
+	</PhotoGridSection>
+  <PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/rock-4.jpeg" alt="Back Drops" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/rock-5.jpeg" alt="Venue" />
+        </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/rock-6.jpeg" alt="Review" />
+		</div>
+	</PhotoGridSection>
+	<PhotoGridSection>
+		<div slot="column-1-body">
+		  <img src="/assets/images/rock-7.jpeg" alt="Back Drops" />
+		</div>
+		<div slot="column-2-body">
+		  <img src="/assets/images/rock-8.jpeg" alt="Venue" />
+        </div>
+		<div slot="column-3-body">
+		  <img src="/assets/images/rock-9.jpeg" alt="Review" />
+		</div>
+	</PhotoGridSection>
+  </div>
+  <CustomerQuoteSection
+  quoteText="Great quality pictures to capture amazing memories! 5 stars for sure!!"
+  customerName="Danielle Vitti"
+/>
   <div class="features mg">
     <h3 class="centered">Capture Modes</h3>
     <PhotoGridSection>
@@ -237,6 +314,10 @@ const seo = {
 }
 
 .gallery img {
+  border-radius: var(--theme-shape-radius);
+}
+
+.rockstar img {
   border-radius: var(--theme-shape-radius);
 }
 
